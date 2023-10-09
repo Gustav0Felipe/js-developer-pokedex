@@ -146,20 +146,108 @@
     border-radius: 1rem;
 }
 
-@media screen and (min-width: 380px) {
+
+#caracteristicas{
+    display: none;
+    height: 90vh;
+    width: 90vw;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    max-width: 900px;
+    box-shadow: 1px 1px 1px rgba(41, 41, 41, 0.5);
+    padding: 1rem;
+    background-color: #fff;
+}
+#caracteristicas #voltar{
+    display: inline-block;
+    width: 100vw;
+    text-align: center;
+    font-size: 2em;
+
+    cursor: pointer;
+}
+
+#perfil .pokemon{
+    padding: 0;
+    margin: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+#perfil, #statList{
+    padding: 0;
+    list-style: none;
+}
+
+#perfilPokemon img{
+    max-width: 100%;
+    height: 100px;
+}
+#perfilPokemon {
+    justify-content: space-around;
+}
+
+#status{
+    margin-top: 10px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#statList{
+    margin: 10px 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#statList li.stat{
+    margin-left: 50%;
+}
+#statList li.statName{
+    margin-left: 30%;
+}
+#statList li{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    
+    margin: .5rem;
+    border-radius: 1rem;
+}
+
+/* @media screen and (min-width: 380px) {
     .pokemons {
         grid-template-columns: 1fr 1fr;
     }
-}
+} */
+
 
 @media screen and (min-width: 576px) {
     .pokemons {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
-}
+    #caracteristicas {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+    #perfilPokemon {
+        justify-content: center;
+    }
+} 
 
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
     .pokemons {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
-}
+    #caracteristicas {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+} */
